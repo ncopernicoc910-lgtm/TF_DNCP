@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>DNCP EF</title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="layers/Lab6DNCPDepartamento_1.js"></script><script src="layers/Provincias_2.js"></script><script src="layers/Distrito_3.js"></script><script src="layers/IIEECHANCHAMAYO_4.js"></script>
+        <script src="styles/Lab6DNCPDepartamento_1_style.js"></script><script src="styles/Provincias_2_style.js"></script><script src="styles/Distrito_3_style.js"></script><script src="styles/IIEECHANCHAMAYO_4_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>        
+    </body>
+    <!-- LOGO INSTITUCIONAL UPN -->
+    <div id="logo-container">
+    <a href="https://www.upn.edu.pe" target="_blank">
+        <img src="https://www.upn.edu.pe/sites/default/files/logo-upn-nuevo.svg" 
+             alt="Logo UPN" 
+             id="logo">
+      </a>
+    </div>
+
+   <style>
+    #logo-container {
+    position: absolute;
+    bottom: 10px;   /* ESQUINA INFERIOR */
+    left: 10px;     /* IZQUIERDA */
+    z-index: 9999;
+    }
+
+   #logo {
+    height: 60px;
+    background: white;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+    </style>
+    </html>
+    <!-- ENLACE A TU INSTAGRAM -->
+    <div id="ig-container">
+    <a href="https://www.instagram.com/coper_nicoxs/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+             alt="Instagram"
+             id="ig-logo">
+      </a>
+    </div>
+   
+    <style>
+    #ig-container {
+    position: absolute;
+    bottom: 80px;   /* separa este valor para moverlo arriba/abajo */
+    left: 10px;
+     z-index: 9999;
+    }
+
+    #ig-logo {
+    height: 45px;
+    border-radius: 8px;
+    background: white;
+    padding: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+    </style>
+  
